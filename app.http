@@ -1,0 +1,32 @@
+### Normal Inializing
+
+GET http://localhost:3000/
+
+###Get all
+GET http://localhost:3000/players/
+
+###Adding Player
+POST http://localhost:3000/players/
+Content-Type: application/json
+
+{
+    "playerName":"Vishal",
+    "jerseyNumber":17,
+    "role":"Bowler"
+}
+
+###Get player
+GET http://localhost:3000/players/2/
+
+###PUT player
+PUT http://localhost:3000/players/1/
+Content-Type: application/json
+
+{
+    "playerName":"Maneesh",
+    "jerseyNumber":54,
+    "role":"All-rounder"
+}
+
+###Delete
+DELETE http://localhost:3000/players/1/
